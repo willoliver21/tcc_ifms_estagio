@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Cadastro
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page5">
+  <form id="cadastro-form2">
+    <ion-list id="cadastro-list3">
+      <ion-item id="cadastro-input3">
+        <ion-label>
+          Nome
+        </ion-label>
+        <ion-input type="text" placeholder="" [(ngModel)]="usuario.nome" name="nome"></ion-input>
+      </ion-item>
+      <ion-item id="cadastro-input4">
+        <ion-label>
+          Email
+        </ion-label>
+        <ion-input type="email" placeholder="" [(ngModel)]="usuario.email" name="email"></ion-input>
+      </ion-item>
+      <ion-item id="cadastro-input6">
+        <ion-label>
+          Cpf
+        </ion-label>
+        <ion-input type="text" placeholder="" [(ngModel)]="usuario.cpf" name="cpf"></ion-input>
+      </ion-item>
+      <ion-item id="cadastro-input5">
+        <ion-label>
+          Senha
+        </ion-label>
+        <ion-input type="text" placeholder="" [(ngModel)]="usuario.senha" name="senha"></ion-input>
+      </ion-item>
+      <ion-item id="cadastro-input7">
+        <ion-label>
+          Confirmar Senha
+        </ion-label>
+        <ion-input type="text" placeholder=""></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-item id="cadastro-select1">
+      <ion-label>
+        Tipo
+      </ion-label>
+      <ion-select name="" [(ngModel)]="usuario.tipo" name="tipo">
+        <ion-option>
+          Aluno
+        </ion-option>
+        <ion-option>
+          Professor
+        </ion-option>
+      </ion-select>
+    </ion-item>
+    <div class="spacer" style="width:288px;height:14px;" id="cadastro-spacer6"></div>
+    <button id="cadastro-button6" ion-button color="positive" block (click)="save()">
+      Cadastrar
+    </button>
+  </form>
+
+
+<!-- <ion-list>
+
+  <ion-item *ngFor="let cadastro of usuarios">
+
+    <h2>{{cadastro.id}} - {{cadastro.nome}}</h2>
+    <ion-note item-right>{{cadastro.tipo}}</ion-note>
+
+  </ion-item>
+
+</ion-list> -->
+
+
+
+</ion-content>
